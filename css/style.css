@@ -7,3 +7,75 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+                /* Layout */
+
+.cont-top{
+    height: 60px;
+}
+
+.cont-bot{
+    height: calc(100vh - 60px);
+}
+
+.cont-left{
+    background-color: #12293f;
+    background-image: url(/img/sidebar-bg.png);
+    width: 50px;
+    height: calc(100vh - 60px);     
+}
+
+.cont-right{
+    background-color: aqua;
+    width: calc(100% - 50px);
+    height:calc(100vh - 60px);
+}
+
+/* Nav Bar */
+nav .row{
+    height: 60px;
+}
+
+nav .mobile-logo{
+    width: 38px;
+}
+
+nav .logo{
+    width: 140px;
+}
+
+nav .row div:last-child ul li{
+    padding-right: 25px;
+}
+
+/* Aside Bar */
+aside .my-row{
+    height: calc(100vh - 60px);
+}
+
+aside .my-row .my-col{
+    padding: 20px 5px;
+}
+
+aside ul li{
+    padding: 10px 0;
+}
+
+
+.h-60{
+    height: 60px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .cont-left{
+        width: 150px;
+    }
+
+    .cont-right{
+        width: calc(100% - 150px);
+    }
+
+    aside .my-row .my-col .container span{
+        display: block;
+    }
+}
