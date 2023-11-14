@@ -16,17 +16,23 @@
     <!-- Navigation Bar -->
     <div class="cont-top container-fluid p-0">
         <nav>
+
+            <!-- logo -->
             <div class="row align-content-center p-0 m-0">
                 <div class="col-2 col-lg-2 d-flex align-content-center">
                     <img src="./img/mobile-logo.png" class="mobile-logo d-lg-none" alt="">
                     <img src="./img/logo.svg" class="logo d-none d-lg-block" alt="">
                 </div>
+
+                <!-- search bar -->
                 <div class="col-9 col-lg-8">
                     <div class="input-group">
                         <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control border-start-0 back-grey" placeholder="Prova a cercare: Laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
+
+                <!-- icons -->
                 <div class="col-1 col-lg-2 d-flex justify-content-center align-content-center">
                     <ul class="list-unstyled d-flex my-auto">
                         <li class="list-group-item d-none d-lg-block"> 
@@ -47,9 +53,11 @@
         </nav>
     </div>
 
-    <!-- Aside Bar -->
+    <!-- Main and Aside -->
     <div class="cont-bot container-fluid p-0">
         <div class="d-flex">
+
+            <!-- Aside Bar -->
             <div class="cont-left">
                 <aside>
                     <div class="my-row d-flex flex-column justify-content-between">
@@ -77,7 +85,7 @@
                             </div> 
                         </div>
                         <div class="my-col">
-                            <div class="content text-center pb-5">
+                            <div class="content text-center pb-3">
                                 <i class="fas fa-gear" style="color: white; font-size: 20px;"></i>
                                 <span class="text-white px-3 d-none d-lg-inline-block">
                                     Admin
@@ -89,13 +97,67 @@
             </div>
             
             <!-- Main Container -->
-            <div class="cont-right">
+            <div class="cont-right overflow-y-scroll">
+                <header>
+                    <div class="container-fluid text-white bg-primary">
+                        <div class="row justify-content-between">
+
+                            <!-- New Student -->
+                            <div class="col-12 col-sm-5 col-lg-3 order-sm-1">
+                                <div class="py-3">
+                                    <span style="padding-right: 10px;">
+                                        Nuovo Studente
+                                    </span>
+                                    <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Boolean -->
+                            <div class="col-12 col-sm-2">
+                                <div class="py-3">
+                                    <div>
+                                        <span style="font-size: x-large; padding-right: 10px;">Boolean</span>
+                                        <div class="badge fw-light bg-darkblue">Piano blaze</div>
+                                    </div>
+    
+                                    <div>
+                                        <span class="badge fw-light bg-darkblue">3 app</span>
+                                        <i class="fa-solid fa-angles-right fa-xs"></i>
+                                        <span class="badge fw-light bg-darkblue d-lg-none">&plus;</span>
+                                        <span class="badge fw-light bg-darkblue d-none d-lg-inline-block hidden-badge">Boolean mobile app</span>
+                                        <span class="badge fw-light bg-darkblue d-none d-lg-inline-block hidden-badge">Boolean web app</span>
+                                        <span class="badge fw-light bg-darkblue d-none d-lg-inline-block hidden-badge">Boolean blog app</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Students -->
+                            <div class="col-12 col-sm-4">
+                                <div class="py-3">
+                                    <div>Studenti negli ultimi 30 minuti</div>
+                                    <div style="font-size: xx-large;">125</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
                 <main>
                     
                 </main>
             </div>
         </div>
     </div>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
 
 
 

@@ -60,9 +60,9 @@ aside ul li{
     padding: 10px 0;
 }
 
-
-.h-60{
-    height: 60px;
+/* Background color */
+.bg-darkblue{
+    background-color: #165bba;
 }
 
 
@@ -78,4 +78,5 @@ aside ul li{
     aside .my-row .my-col .container span{
         display: block;
     }
+
 }
