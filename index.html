@@ -432,13 +432,103 @@
     </div>
 
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 576px;">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            ...
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- First Name - Second Name -->
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <label for="First name">Nome</label>
+                            <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <label for="Last name">Cognome</label>
+                            <input type="text" class="form-control" placeholder="Cognome" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <!-- Email - Password -->
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <div class="input-group">
+                              <span class="input-group-text" id="basic-addon3">@</span>
+                              <input type="email" class="form-control" id="email" aria-describedby="basic-addon3 basic-addon4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" aria-label="password">
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="email">Ripeti Email</label>
+                            <div class="input-group">
+                              <span class="input-group-text" id="basic-addon3">@</span>
+                              <input type="email" class="form-control" id="email" aria-describedby="basic-addon3 basic-addon4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="password">Ripeti Password</label>
+                        <input type="password" class="form-control" aria-label="password">
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-2">
+                            <label for="addres">Indirizzo</label>
+                            <input type="text" class="form-control" aria-label="addres">
+                        </div>
+                    </div>
+
+                    <!-- Position -->
+                    <div class="col-6">
+                        <label for="City">Citt&agrave;</label>
+                        <input type="text" class="form-control" placeholder="City" aria-label="City">
+                    </div>
+                    <div class="col-4">
+                        <label for="State">Stato</label>
+                        <select class="form-select" id="inlineFormSelectPref" aria-label="State">
+                            <option selected>Scegli...</option>
+                            <option value="1">Italia</option>
+                            <option value="2">Francia</option>
+                            <option value="3">Spagna</option>
+                          </select>
+                    </div>
+                    <div class="col-2">
+                        <label for="Zip">CAP</label>
+                        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                    </div>
+
+                    <!-- Img profile -->
+                    <div class="col-12">
+                        <div class="my-3">
+                            <label for="File">Foto</label>
+                            <input type="file" class="form-control" id="File">
+                          </div>
+                    </div>
+
+                    <!-- Save button -->
+                    <div class="col-12">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Seleziona per proseguire
+                            </label>
+                        </div>
+                        <div class="btn btn-primary">Salva</div>
+                        <div class="btn btn-warning text-black">Svuota</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
