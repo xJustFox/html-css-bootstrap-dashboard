@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
                 <div class="col-1 col-lg-2 d-flex justify-content-center align-content-center">
                     <ul class="list-unstyled d-flex my-auto">
                         <li class="list-group-item d-none d-lg-block">
-                            <i class="fa-solid fa-list-ul "></i></i>
+                            <i class="fa-solid fa-list-ul "></i>
                         </li>
                         <li class="list-group-item d-none d-lg-block">
                             <i class="fa-solid fa-circle-question"></i>
@@ -60,6 +60,7 @@
                                 <li><a class="dropdown-item" href="#">Portfolio</a></li>
                                 <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -182,7 +183,7 @@
                                         <table class="table table-hover table-light my-table" >
                                             <thead>
                                                 <tr>
-                                                    <th width="50%" scope="col">Nome</th>
+                                                    <th style="width: 50%;" scope="col">Nome</th>
                                                     <th class="d-none d-md-table-cell" scope="col">Data inizio</th>
                                                     <th class="d-none d-md-table-cell" scope="col">ROI</th>
                                                     <th scope="col">Stato</th>
@@ -366,24 +367,24 @@
                                             <ul class="list-group list-group-flush todo-cursor">
                                               <li class="list-group-item">
                                                   <div class="form-check ">
-                                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                      <label class="form-check-label" for="flexCheckDefault">
+                                                      <input class="form-check-input" type="checkbox" value="" id="kickoff">
+                                                      <label class="form-check-label" for="kickoff">
                                                         Kickoff nuove classi
                                                       </label>
                                                   </div>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        <input class="form-check-input" type="checkbox" value="" id="lesson">
+                                                        <label class="form-check-label" for="lesson">
                                                             Lezione su Bootstrap 5 in classe &num;75
                                                         </label>
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check-username">
+                                                        <label class="form-check-label" for="check-username">
                                                             Controllare username github studenti
                                                         </label>
                                                     </div>
@@ -435,16 +436,16 @@
                     <div class="col-12 col-sm-6">
                         <div class="mb-2">
                             <form action="index.html" method="get">
-                                <label for="First name">Nome</label>
-                                <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+                                <label for="first-name">Nome</label>
+                                <input type="text" class="form-control" placeholder="Nome" id="first-name" aria-label="first-name">
                             </form>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="mb-2">
                             <form action="index.html" method="get">
-                                <label for="Last name">Cognome</label>
-                                <input type="text" class="form-control" placeholder="Cognome" aria-label="Last name">
+                                <label for="last-name">Cognome</label>
+                                <input type="text" class="form-control" placeholder="Cognome" id="last-name" aria-label="last-name">
                             </form>
                         </div>
                     </div>
@@ -455,8 +456,8 @@
                             <form action="index.html" method="get">
                                 <label for="email">Email</label>
                                 <div class="input-group">
-                                  <span class="input-group-text" id="basic-addon3">@</span>
-                                  <input type="email" class="form-control" id="email" aria-describedby="basic-addon3 basic-addon4">
+                                  <span class="input-group-text" id="icon-email">@</span>
+                                  <input type="email" class="form-control" id="email">
                                 </div>
                             </form>
                         </div>
@@ -464,31 +465,14 @@
                     <div class="col-12 col-sm-6">
                         <form action="index.html" method="get">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" aria-label="password">
-                        </form>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <div class="mb-3">
-                            <form action="index.html" method="get">
-                                <label for="email">Ripeti Email</label>
-                                <div class="input-group">
-                                  <span class="input-group-text" id="basic-addon3">@</span>
-                                  <input type="email" class="form-control" id="email" aria-describedby="basic-addon3 basic-addon4">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <form action="index.html" method="get">
-                            <label for="password">Ripeti Password</label>
-                            <input type="password" class="form-control" aria-label="password">
+                            <input type="password" class="form-control" id="password" aria-label="password">
                         </form>
                     </div>
                     <div class="col-12">
                         <div class="mb-2">
                             <form action="index.html" method="get">
                                 <label for="addres">Indirizzo</label>
-                                <input type="text" class="form-control" aria-label="addres">
+                                <input type="text" class="form-control" id="addres" aria-label="addres">
                             </form>
                         </div>
                     </div>
@@ -496,14 +480,14 @@
                     <!-- Position -->
                     <div class="col-12 col-sm-6">
                         <form action="index.html" method="get">
-                            <label for="City">Citt&agrave;</label>
-                            <input type="text" class="form-control" aria-label="City">
+                            <label for="city">Citt&agrave;</label>
+                            <input type="text" class="form-control" id="city" aria-label="City">
                         </form>
                     </div>
                     <div class="col-12 col-sm-4">
                         <form action="index.html" method="get">
-                            <label for="State">Stato</label>
-                            <select class="form-select" id="inlineFormSelectPref" aria-label="State">
+                            <label for="state">Stato</label>
+                            <select class="form-select" id="state" aria-label="State">
                                 <option selected>Scegli...</option>
                                 <option value="1">Italia</option>
                                 <option value="2">Francia</option>
@@ -513,8 +497,8 @@
                     </div>
                     <div class="col-12 col-sm-2">
                         <form action="index.html" method="get">
-                            <label for="Zip">CAP</label>
-                            <input type="text" class="form-control" aria-label="Zip">
+                            <label for="zip">CAP</label>
+                            <input type="text" class="form-control" id="zip" aria-label="Zip">
                         </form>
                     </div>
 
@@ -522,8 +506,8 @@
                     <div class="col-12">
                         <form action="index.html" method="get">
                             <div class="my-3">
-                                <label for="File">Foto</label>
-                                <input type="file" class="form-control" id="File">
+                                <label for="file">Foto</label>
+                                <input type="file" class="form-control" id="file">
                             </div>
                         </form>
                     </div>
@@ -532,8 +516,8 @@
                     <div class="col-12">
                         <form action="index.html" method="get">
                             <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="validate-check">
+                                <label class="form-check-label" for="validate-check">
                                   Seleziona per proseguire
                                 </label>
                             </div>
