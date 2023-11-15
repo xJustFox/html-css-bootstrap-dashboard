@@ -77,9 +77,31 @@ header .button-add:hover i{
 }
                 /* Main */
 /* table */
-main .row .col-12 #my-table tr td:nth-child(n + 2),
-main .row .col-12 #my-table tr th:nth-child(n + 2){
+main .row .col-12 .my-table tr td:nth-child(n + 2),
+main .row .col-12 .my-table tr th:nth-child(n + 2){
     text-align: center;
+}
+
+main .my-table tr td .my-pencil,
+main .my-table tr td .my-trash{
+    color: gray; 
+    padding: 5px; 
+    border: 1px solid gray;
+}
+
+main .my-table tr td .my-pencil,
+main .my-table tr td .my-trash{
+    cursor: pointer;
+}
+
+main .my-table tr td .my-pencil:hover{
+    color: green;
+    border-color: green;
+}
+
+main .my-table tr td .my-trash:hover{
+    color: red;
+    border-color: red;
 }
 
 /* todo */
@@ -105,5 +127,4 @@ main .todo-cursor input:hover{
     aside .my-row .my-col .container span{
         display: block;
     }
-
 }
