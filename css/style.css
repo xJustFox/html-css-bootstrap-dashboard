@@ -46,6 +46,10 @@ nav .row div:last-child ul li{
     padding-right: 25px;
 }
 
+nav .row div:last-child ul li:hover{
+    cursor: pointer;
+}
+
 /* Aside Bar */
 aside .my-row{
     height: calc(100vh - 60px);
