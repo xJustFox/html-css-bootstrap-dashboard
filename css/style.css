@@ -82,6 +82,10 @@ main .row .col-12 #my-table tr th:nth-child(n + 2){
     text-align: center;
 }
 
+/* todo */
+main .todo-cursor input:hover{
+    cursor: pointer;
+}
 
 /* Background color */
 .bg-darkblue{
