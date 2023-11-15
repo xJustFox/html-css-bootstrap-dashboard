@@ -67,7 +67,14 @@ aside ul li:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
 }
-
+                /* Header */
+/* New Student */
+header .button-add:hover{
+    background-color: white;
+}
+header .button-add:hover i{
+    color: #165bba;
+}
                 /* Main */
 /* table */
 main .row .col-12 #my-table tr td:nth-child(n + 2),
